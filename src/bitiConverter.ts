@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import reactElementToJSXString from "react-element-to-jsx-string";
 
 const storage: { [key: string]: ICardData } = {};
 
@@ -18,8 +17,6 @@ function toJson(data: string | React.ReactNode): string {
   if (data == undefined) return "no data found.";
   var str = data as string;
   if (str) return str;
-  var node = data as ReactNode;
-  if (node) return reactElementToJSXString(node).valueOf();
 
   return "no data found.";
 }
