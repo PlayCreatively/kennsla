@@ -1,0 +1,36 @@
+.Chapter {
+  margin-top: 3em;
+  border-top: 2px solid $white;
+  text-align: start;
+
+  .Chapter-header {
+    color: $white;
+    font-size: 3em;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+
+    cursor: pointer;
+  }
+}
+
+.Chapter-header:hover::after {
+  content: " #";
+  transition: 200ms;
+  color: $white;
+  transform: translateX(20px);
+  position: relative;
+  left: -0.1em;
+}
+.Chapter-header::after {
+  color: transparent;
+  position: relative;
+  transition: 200ms;
+  top: 0.1em;
+  left: -0.75em;
+
+  content: " #";
+}
+
+.Chapter-header::before {
+  content: "📖";
+}
