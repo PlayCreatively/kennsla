@@ -5,7 +5,7 @@ const LineSegment: React.FC<{ className?: string }> = ({
   return (
     <div
       className={
-        "LineSegment" + (className != undefined ? " " + className : "")
+        "LineSegment" + (className !== undefined ? " " + className : "")
       }
     >
       <p>{children}</p>

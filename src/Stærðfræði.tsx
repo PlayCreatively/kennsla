@@ -13,50 +13,6 @@ const x = [
   { id: "point", latex: "b=(1,1)", showLabel: true },
 ];
 
-const y = [
-  {
-    id: "1",
-    color: "#2d70b3",
-    latex: "f\\left(x\\right)=.2x^{2}",
-    lineStyle: "DASHED",
-  },
-  {
-    id: "4",
-    color: "#6042a6",
-    latex: "P_{v}=2.5",
-  },
-  {
-    id: "2",
-    color: "#c74440",
-    latex: "P=\\left(P_{v},\\ f\\left(P_{v}\\right)\\right)",
-    showLabel: true,
-    label: "P",
-    pointStyle: "OPEN",
-    dragMode: "XY",
-  },
-  {
-    id: "18",
-    color: "#c74440",
-    latex: "f'\\left(P_{v}\\right)\\left(x-P_{v}\\right)+f\\left(P_{v}\\right)",
-  },
-  {
-    id: "19",
-    color: "#2d70b3",
-    latex: "h=f'\\left(P_{v}\\right)",
-  },
-  {
-    id: "20",
-    color: "#c74440",
-    latex: "P",
-    showLabel: true,
-    label: "${h}",
-    hidden: true,
-    labelSize: "1.3",
-    labelOrientation: "above_right",
-    labelAngle: "\\tan^{-1}\\left(h\\right)",
-  },
-];
-
 function Stærðfræði() {
   return (
     <div className="Stærðfræði">
@@ -66,9 +22,11 @@ function Stærðfræði() {
           {"$$\\vec a \\times \\vec a = {|\\vec a|}^2$$"}
         </Card>
         <Card name="annað nafn">
+          $$
           {
-            "$${|\\vec a+ \\vec b|}^2 = {|\\vec a|}^2 + 2 \\vec a \\vec b + {|\\vec b|}^2$$"
+            "{|\\vec a+ \\vec b|}^2 = {|\\vec a|}^2 + 2 \\vec a \\vec b + {|\\vec b|}^2"
           }
+          $$
         </Card>
         {/* http://mathquill.com/ */}
         {/* https://www.desmos.com/calculator/9glvxfygcv */}

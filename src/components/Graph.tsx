@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useRef } from "react";
-// @ts-ignore
 import Desmos from "desmos";
 
 interface IGraph {
@@ -24,13 +23,13 @@ const Graph: React.FC<IGraph> = ({ expressions, exp }) => {
 
   useEffect(() => {
     const calculator = GetCalculator(divRef);
-    if (expressions != undefined) {
+    if (expressions !== undefined) {
       for (let i = 0; i < expressions.length; i++)
         calculator.setExpression(expressions[i]);
-    } else if (exp != undefined) {
+    } else if (exp !== undefined) {
       calculator.setExpression({ id: "graph", latex: exp });
     }
-  }, [divRef]);
+  }, [divRef, expressions, exp]);
 
   return <div className="Graph" ref={divRef}></div>;
 };

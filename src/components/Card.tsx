@@ -1,9 +1,6 @@
-import { ReactNode } from "react";
-import SubInfo from "./SubInfo";
 import {
   SaveCard,
   SaveStorageToDisk,
-  storage,
 } from "../bitiConverter";
 
 const Card: React.FC<ICardNode> = ({ name, children }) => {

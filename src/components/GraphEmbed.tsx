@@ -1,17 +1,9 @@
-interface IGraph {
-  //Array of expressions
-  expressions?: Array<any>;
-  //single expression
-  exp?: string;
-  //source of desmos link for embed
-  src?: string;
-}
-
 const GraphEmbed: React.FC<{ src: string }> = ({ src }) => {
   return (
     <iframe
       src={src + "?embed"}
       className="Graph"
+      title="graf"
       allowFullScreen={true}
       style={{
         border: "1px solid #ccc",

@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 
 const storage: { [key: string]: ICardData } = {};
 
@@ -14,7 +14,7 @@ function SaveStorageToDisk() {
 }
 
 function toJson(data: string | React.ReactNode): string {
-  if (data == undefined) return "no data found.";
+  if (data === undefined) return "no data found.";
   var str = data as string;
   if (str) return str;
 
