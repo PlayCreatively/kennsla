@@ -9,13 +9,12 @@ p {
   text-align: left;
 }
 
-
 mjx-container[jax="CHTML"][display="true"] mjx-math {
-  font-size:3rem;
+  font-size: 3rem;
 }
 
 mjx-container[jax="CHTML"] mjx-math {
-  font-size:1.1em;
+  font-size: 1.1em;
   color: rgb(224, 169, 66);
 }
 
@@ -29,6 +28,9 @@ h2 {
 
 body {
   background-color: $dark-background;
+}
+
+#root > :not(:first-child) {
   width: 50rem;
   margin: auto;
 }

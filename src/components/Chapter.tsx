@@ -1,7 +1,8 @@
-export default function Chapter({ title, children }) {
+const Chapter: React.FC<IChapter> = ({ title, children }) => {
   function handleClick() {
     document.location.href = "#" + title.toLowerCase();
   }
+  let element: Element;
 
   return (
     <div className="Chapter" id={title.toLowerCase()}>
@@ -11,4 +12,6 @@ export default function Chapter({ title, children }) {
       <div className="Chapter-content">{children}</div>
     </div>
   );
-}
+};
+
+export default Chapter;

@@ -65,6 +65,9 @@ h2 {
 
 body {
   background-color: #1b1a18;
+}
+
+#root > :not(:first-child) {
   width: 50rem;
   margin: auto;
 }
@@ -164,11 +167,10 @@ hi {
 
 .LineSegment {
   border-top: 0.1em dashed rgba(128, 128, 128, 0.5);
-  margin: 2em 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 1em auto 0 auto;
   width: 90%;
 }
 .LineSegment p {
@@ -180,4 +182,23 @@ hi {
   bottom: 0.6em;
   padding: 0 0.5em;
   background-color: #1b1a18;
+}
+
+nav {
+  background-color: rgba(128, 128, 128, 0.18);
+  margin-bottom: 1em;
+  display: flex;
+}
+
+nav a {
+  color: #e2e2e2;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.6em 1em;
+  font-family: sans-serif;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.16);
 }/*# sourceMappingURL=index.css.map */

@@ -1,11 +1,21 @@
 import Chapter from "components/Chapter";
 import GraphEmbed from "components/GraphEmbed";
 import LineSegment from "components/LineSegment";
+import Observer from "components/Observer";
 import ScrollText from "components/ScrollText";
 
 const Diffrun = () => {
+
   return (
     <Chapter title="Diffrun">
+      {/* <Observer>
+        <Chapter title="d">
+          <p>de</p>
+        </Chapter>
+        <Chapter title="b">
+          <p>da</p>
+        </Chapter>
+      </Observer> */}
       <p>
         Hvað gerum við til að reikna halla tölu á tilteknum punkti grafs?
         <br />
@@ -42,8 +52,6 @@ const Diffrun = () => {
           Þetta er samt bara hallatalan á milli punktana \(P\) og \(Q\) en ekki
           á \(P\) sjálfum. Þrátt fyrir það er þetta ágæt ágiskun og skref í
           rétta átt til að finna hver hallatalan á \(P\) er.
-          <br />
-          <br />
           <LineSegment>Við getum gert betur</LineSegment>
           Hvað ef við færum \(Q\) nær \(P\)?
           <br />
@@ -51,7 +59,7 @@ const Diffrun = () => {
           <br />
           <br />
           Flott þá vitum við hvernig á að komast nær hallatöluni af \(P\).
-          <br />
+          <LineSegment>Ef við færum Q í P</LineSegment>
           En hvað ef við færum \(Q\) þar sem \(P\) er? Er það ekki talan?
           <br />
           Nei, því þá mun koma í ljós að við erum ekki lengur með tvo punkta,
@@ -68,7 +76,7 @@ const Diffrun = () => {
 
       <p>
         Ef þú ert eitthvað eins og ég, þá er þetta ekki voðalega fullnægjandi
-        aðferð og gætir séð þetta sem einhver sadistic brandari beint á OCD
+        aðferð og gætir séð þetta sem einhver óþarfa grikkur beint á OCD
         þolendur. Þó þetta getur verið eins nákvæmt og þú vilt, þá verður þetta
         í raun aldrei nákvæmlega talan.
         <br />
