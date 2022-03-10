@@ -1,7 +1,4 @@
-import {
-  SaveCard,
-  SaveStorageToDisk,
-} from "../bitiConverter";
+import { SaveCard, SaveStorageToDisk } from "../bitiConverter";
 
 const Card: React.FC<ICardNode> = ({ name, children }) => {
   let nameEl = (
@@ -16,14 +13,18 @@ const Card: React.FC<ICardNode> = ({ name, children }) => {
     </div>
   );
 
+  function getData(): any {
+    return "";
+  }
+
   function Save() {
     SaveCard({ name, children });
     SaveStorageToDisk();
   }
 
   return (
-    <div className="Card">
-      {/* {nameEl} */}
+    <div className="Card CardStyle">
+      {nameEl}
       <div className="Card-content">{children}</div>
     </div>
   );

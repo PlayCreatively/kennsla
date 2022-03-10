@@ -1,5 +1,4 @@
-@charset "UTF-8";
-.Card {
+.CardStyle {
   color: #d9d9d9;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0.8em;
@@ -11,6 +10,7 @@
   max-width: fit-content;
   align-self: center;
 }
+
 .Card .Card-title {
   font-family: monospace;
 }
@@ -52,7 +52,7 @@ mjx-container[jax=CHTML][display=true] mjx-math {
 
 mjx-container[jax=CHTML] mjx-math {
   font-size: 1.1em;
-  color: #e0a942;
+  color: #dbb672;
 }
 
 div p:hover {
@@ -69,7 +69,8 @@ body {
 
 #root > :not(:first-child) {
   width: 50rem;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 ie {
@@ -93,8 +94,8 @@ hi {
 }
 
 .Chapter {
-  margin-top: 3em;
-  border-top: 2px solid #d9d9d9;
+  margin-top: 2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
   text-align: start;
 }
 .Chapter .Chapter-header {
@@ -102,6 +103,9 @@ hi {
   font-size: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   cursor: pointer;
+}
+.Chapter .Chapter .Chapter-header {
+  font-size: 2.25em;
 }
 
 .Chapter-header:hover::after {
@@ -120,10 +124,6 @@ hi {
   top: 0.1em;
   left: -0.75em;
   content: " #";
-}
-
-.Chapter-header::before {
-  content: "📖";
 }
 
 .ScrollText {
@@ -201,4 +201,9 @@ nav a {
 
 nav a:hover {
   background-color: rgba(0, 0, 0, 0.16);
+}
+
+.DYK {
+  color: #999999;
+  font-style: italic;
 }/*# sourceMappingURL=index.css.map */

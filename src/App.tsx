@@ -8,14 +8,21 @@ function App() {
     <Router>
       <nav>
         <a href="/">Stærðfræði</a>
-        <a href="/diffrun">Diffrun</a>
-        <a href="/vigrar">vigrar</a>
+        <a href="/calculus">Calculus</a>
+        <a href="/vigrar">Vigrar</a>
       </nav>
       <Routes>
         <Route path="/vigrar" element={<Vigrar />} />
         <Route path="/" element={<Stærðfræði />} />
-        <Route path="/diffrun" element={<Diffrun />} />
-        <Route path="*" element={<p>no page</p>} />
+        <Route path="/calculus" element={<Diffrun />} />
+        <Route
+          path="*"
+          element={
+            <p style={{ margin: "auto", fontSize: "10vh" }}>
+              Þessi síða er ekki til.
+            </p>
+          }
+        />
       </Routes>
     </Router>
   );

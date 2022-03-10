@@ -1,15 +1,23 @@
+$headerSize: 3em;
+
 .Chapter {
-  margin-top: 3em;
-  border-top: 2px solid $white;
+  margin-top: 2rem;
+  border-top: 2px solid hsl(0, 0%, 100%, .15);
   text-align: start;
 
   .Chapter-header {
     color: $white;
-    font-size: 3em;
+    font-size: $headerSize;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
 
     cursor: pointer;
+  }
+
+  .Chapter {
+    .Chapter-header {
+      font-size: $headerSize *.75;
+    }
   }
 }
 
@@ -29,8 +37,4 @@
   left: -0.75em;
 
   content: " #";
-}
-
-.Chapter-header::before {
-  content: "📖";
 }

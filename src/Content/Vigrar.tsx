@@ -1,3 +1,5 @@
+import DYK from "components/DYK";
+
 const Vigrar = () => {
   return (
     <>
@@ -9,6 +11,10 @@ const Vigrar = () => {
         }
         $$
       </p>
+      <DYK>
+        Ef þú gleymir stundum hvor talan deilist yfir hina, og gerir það vitlaust í vasareikni: 
+        í stað fyrir að enduskrifa deilinguna í reiknivélinni getirður einfaldlega set svarið í mínus fyrsta veldi \{"(Ans^{-1}"}\) og fengið svarið.
+      </DYK>
     </>
   );
 };

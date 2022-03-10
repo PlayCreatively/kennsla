@@ -15,7 +15,7 @@ mjx-container[jax="CHTML"][display="true"] mjx-math {
 
 mjx-container[jax="CHTML"] mjx-math {
   font-size: 1.1em;
-  color: rgb(224, 169, 66);
+  color: rgb(219, 182, 114);
 }
 
 div p:hover {
@@ -30,9 +30,11 @@ body {
   background-color: $dark-background;
 }
 
+//all but nav
 #root > :not(:first-child) {
   width: 50rem;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 ie {

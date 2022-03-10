@@ -2,7 +2,6 @@ const Chapter: React.FC<IChapter> = ({ title, children }) => {
   function handleClick() {
     document.location.href = "#" + title.toLowerCase();
   }
-  let element: Element;
 
   return (
     <div className="Chapter" id={title.toLowerCase()}>

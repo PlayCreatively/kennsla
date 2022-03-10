@@ -1,4 +1,4 @@
-.Card {
+.CardStyle{
   color: $white;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0.8em;
@@ -8,6 +8,9 @@
   margin: 1.4em;
   max-width: fit-content;
   align-self: center;
+}
+
+.Card {
 
   .Card-title {
     font-family: monospace;
